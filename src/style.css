@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    background-image: url(../images/lp背景.jpg);
+}
+
+.main {
+    background: rgba(255,255,255,0.3);
+}
+
+.container {
+    width: 750px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    box-shadow: 5px 0 5px #ddd, -5px 0 5px #ddd;
+    opacity: 1;
+}
+
+.container img {
+    margin-top: -7px;
+    width: 100%;
+}
+
+.btn_container a{
+    position: relative;
+    width: 100%;
+}
+
+.CTA_subs, .package {
+    margin-top: -6px;
+    width: 100%;
+    /* height: 163px; */
+    background-image: url(../images/03_03.jpg);
+    background-size: cover;
+}
+
+.CTA_subs a {
+    display: block;
+}
+
+.CTA_subs a img {
+    display: block;
+    margin-left: 5.4%;
+    margin-top: -15px;
+    width: auto;
+}
+
+.package {
+    background-image: url(../images/10_06.jpg);
+    position: relative;
+}
+
+.package img{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 200px;
+}
+
+.fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 2s;
+}
+
+#footer{
+    width: 100%;
+    text-align: center;
+    background-color: #242424;
+    color: #eeeeee;
+    margin-top: -7px;
+}
+
+#footer a {
+    color: #eeeeee;
+}
+
+#footer p {
+    margin-bottom: 0px;
+}
+
+.fixed-footer {
+    display: none;
+}
+
+.amazonpay-button-inner-image {
+    width: auto;
+}
+
+
+/* =============================== */
+/* 画像のリフレクション */
+/* =============================== */
+
+.reflection-img{
+    /* width       :510px; */
+    /* height      :350px; */
+    position    :relative;
+    overflow    :hidden;
+}
+
+.reflection {
+    height      :100%;
+    width       :30px;
+    position    :absolute;
+    top         :-100px;
+    left        :0;
+    background-color: #fff;
+    opacity     :0;
+    transform: rotate(-45deg);
+    animation: reflection 3s ease-in-out infinite;
+    -webkit-transform: rotate(-45deg);
+    -webkit-animation: reflection 3s ease-in-out infinite;
+    -moz-transform: rotate(-45deg);
+    -moz-animation: reflection 3s ease-in-out infinite;
+    -ms-transform: rotate(-45deg);
+    -ms-animation: reflection 3s ease-in-out infinite;
+    -o-transform: rotate(-45deg);
+    -o-animation: reflection 3s ease-in-out infinite;
+}
+ 
+@keyframes reflection {
+    0% { transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { transform: scale(0) rotate(45deg); opacity: 0.3; }
+    81% { transform: scale(4) rotate(45deg); opacity: 0.5; }
+    100% { transform: scale(50) rotate(45deg); opacity: 0; }
+}
+@-webkit-keyframes reflection {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.3; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 0.5; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes reflection {
+    0% { -moz-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -moz-transform: scale(0) rotate(45deg); opacity: 0.3; }
+    81% { -moz-transform: scale(4) rotate(45deg); opacity: 0.5; }
+    100% { -moz-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+@-ms-keyframes reflection {
+    0% { -ms-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -ms-transform: scale(0) rotate(45deg); opacity: 0.3; }
+    81% { -ms-transform: scale(4) rotate(45deg); opacity: 0.5; }
+    100% { -ms-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+@-o-keyframes reflection {
+    0% { -o-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -o-transform: scale(0) rotate(45deg); opacity: 0.3; }
+    81% { -o-transform: scale(4) rotate(45deg); opacity: 0.5; }
+    100% { -o-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
+
+
+@media screen and (max-width: 750px){
+
+    .container {
+        width: 100%;
+        border: none;
+    }
+
+    .container img {
+        width: 100%;
+        margin-top: -7px;
+    }
+
+
+    .CTA_subs, .package {
+        background-size: contain;
+    }
+
+    .CTA_subs a img {
+        width: 94%;
+        margin-top: -7px;
+    }
+    
+    .package img {
+        width: 100%;
+        bottom: 100px;
+    }
+
+    .fixed-footer {
+        height: 47px;
+        background: rgba(255,255,255,0.4);
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        /* justify-content: space-evenly; */
+    }
+    
+    .fixed-footer a {
+        margin: auto;
+        width: 49%;
+        display: block;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .fixed-footer a img {
+        margin-top: 0;
+    }
+}
+
+
+/*Amazon Payの購入ボタンサイズ*/
+.amazon_pay_button_wallet_sp_ec img {
+	width: auto;
+}
+
